@@ -1,0 +1,143 @@
+html, body {
+    background-color: rgb(15, 15, 15);
+
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33vw;
+    max-width: 500px;
+    min-width: 250px;
+    height: 10vh;
+    
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: slategray;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+.wrapper-horiz {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+    min-width: 750px;
+}
+
+.waveform-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.mixer-strip {
+    display: flex;
+    flex-flow: column nowrap;
+
+    color: #fafafa;
+    align-items: center;
+}
+
+.fader {
+    writing-mode: vertical-lr;
+    height: 30vh;
+    direction: rtl;
+}
+
+.solo-button {
+    width: 4vh;
+    aspect-ratio: 1/1;
+}
+
+.fuck {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    background-color: rgb(45, 45, 45);
+    color: #fafafa;
+
+    border-color: rgb(150, 150, 150);
+    font-size: 18pt;
+
+    padding: 1em;
+}
+
+#main-fader {
+    height: 26vh;
+}
+
+#final-buttons {
+    justify-content: space-around;
+
+    height: 40vh;
+}
+
+#loadingGUI {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9pt;
+    color: #fafafa;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.loadingGUIItem {
+    padding-right: 8pt;
+    padding-top: 0;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    width: calc(100%-60px);
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#title-and-exit {
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-items: flex-end;
+}
+
+#title {
+    color: #fafafa;
+    padding-left: 36pt;
+    margin: 0;
+}
+
+#exit {
+    color: rgb(170, 170, 240);
+    font-size: 18pt;
+}
+
+#main {
+    min-height: 100vh;
+}
+
